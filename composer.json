@@ -1,0 +1,17 @@
+{
+  "name": "akikhaev/terminal",
+  "description": "Terminal manage class. Clear screen or scroll, colors, title, etc.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "AKikhaev",
+      "email": "aliday.pr@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AKikhaev\\": "src"
+    }
+  },
+  "require": {}
+}

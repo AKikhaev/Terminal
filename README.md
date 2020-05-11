@@ -18,3 +18,19 @@ Terminal::writeLn(
 );
 ```
 * etc.
+##### Installation
+* composer.json:
+```
+    {
+        "repositories": [
+            {
+                "url": "https://github.com/AKikhaev/Terminal.git",
+                "type": "vcs"
+            }
+        ],
+        "require": {
+            "akikhaev/terminal": "~1.0"
+        }
+    }
+```
+`composer install`
