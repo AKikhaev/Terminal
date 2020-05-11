@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "AKikhaev\\Terminal": "src"
+      "AKikhaev\\": "src"
     }
   },
   "require": {}
