@@ -1,6 +1,6 @@
 <?php
 
-namespace AKikhaev;
+namespace AKikhaev\Terminal;
 
 class Terminal
 {
