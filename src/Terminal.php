@@ -72,7 +72,7 @@ class Terminal
      */
     public static function write($data): bool
     {
-        if (self::$IS_CLI) {
+        if (self::IS_CLI) {
             echo $data;
             return true;
         }
