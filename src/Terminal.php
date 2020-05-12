@@ -4,7 +4,7 @@ namespace AKikhaev\Terminal;
 
 class Terminal
 {
-    private static $IS_CLI = PHP_SAPI === 'cli';
+    public const IS_CLI = PHP_SAPI === 'cli';
 
     public const DEFAULT = 0;
     public const BOLD = 1;
