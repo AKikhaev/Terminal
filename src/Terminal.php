@@ -64,6 +64,52 @@ class Terminal
         return '';
     }
 
+    /** Move cursor up
+     * @param int $lines
+     * @return string
+     */
+    public static function moveUp(int $lines = 1){
+        return "\e[$lines".'A';
+    }
+
+    /** Move cursor down
+     * @param int $lines
+     * @return string
+     */
+    public static function moveDown(int $lines = 1){
+        return "\e[$lines".'B';
+    }
+
+    /** Move cursor left
+     * @param int $chars
+     * @return string
+     */
+    public static function moveLeft(int $chars = 1){
+        return "\e[$lines".'D';
+    }
+
+    /** Move cursor right
+     * @param int $chars
+     * @return string
+     */
+    public static function moveRight(int $chars = 1){
+        return "\e[$lines".'C';
+    }
+
+    /** Save cursor position
+     * @return string
+     */
+    public static function positionSave(){
+        return "\e[s";
+    }
+
+    /** Restore cursor position
+     * @return string
+     */
+    public static function positionRestore(){
+        return "\e[u";
+    }
+
     /**
      * Output to active terminal
      * @param $data
@@ -118,7 +164,7 @@ class Terminal
     }
 
     /**
-     * Clear only scroll memory. All current data stay on screen 
+     * Clear only scroll memory. All current data stay on screen
      * @return bool
      */
     public static function clearScroll(): bool
@@ -136,7 +182,7 @@ class Terminal
     }
 
     /**
-     * Set terminal screen title. Bash usually restore it after process to previous state   
+     * Set terminal screen title. Bash usually restore it after process to previous state
      * @param $title
      * @return bool
      */
@@ -146,7 +192,7 @@ class Terminal
     }
 
     /**
-     * Clear current line. Now you can print from its beginning 
+     * Clear current line. Now you can print from its beginning
      * @return bool
      */
     public static function clearLine(): bool
